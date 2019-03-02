@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="navStyle.css">
+    <link rel="stylesheet" type="text/css" href="mainStyle.css">
+    <title Registration ^_^></title>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="Welcome.html">Welcome</a></li>
+            <li><a href="SignIn.html">Sign In</a></li>
+            <li><a href="RegisterForm.html">Registeration</a> </li>
+            <li><a href="Map.html">Map</a></li>
+            <li><a href="MyCv.html">My CV</a></li>
+            <li><a href="Home.html">Home</a></li>
+
+        </ul>
+    </nav>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Acount Information:</legend>
+            <h4>User Name: </h4>
+            <input type="text" name='userName' value=" <10 ^_^" required maxlength="10">
+
+            <h4>Password: </h4>
+            <input type="password" name="password" required>
+
+            <h4>Confirm Password: </h4>
+            <input type="password" name="confirmPassword" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+
+            <h4>Visa No</h4>
+            <input type="number" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?" required>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Personal Information:</legend>
+
+            <h4>Name: </h4>
+            <input type="text" name="Name" required>
+
+            <h4>Date Of Birth: </h4>
+            <input type="date" name="date" required>
+
+            <h4>Date Of Birth: </h4>
+            <input type="date" name="date" required>
+
+            <h4>Favorite Color: </h4>
+            <input type="color" name="favColor">
+
+            <h4>Profile Photo: </h4>
+            <input type="file" name="profilePhoto" multiple="multiple">
+
+            <h4>Favorite Browser: </h4>
+            <input type="text" name="browserList" list="browsers">
+            <datalist id="browsers">
+                <option>Google Chrome</option>
+                <option>Edge</option>
+                <option>Firefox</option>
+
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Company Information: </legend>
+
+            <h4>No Of Employees: </h4>
+            <input type="number" name="empNo">
+
+            <h4>Estimated Revenue: </h4>
+            <input type="range" name="revenue" minlength="0" maxlength="10">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information: </legend>
+
+            <h4>Email Adress (es): </h4>
+            <input type="email" name="email" required>
+
+            <h4>Phone Number: </h4>
+            <input type="range" name="revenue" minlength="0" maxlength="10">
+
+        </fieldset>
+
+        </br>
+        <input type="submit" name="regist" value="Regist">
+        <input type="reset" name="cancle" value="Cancle">
+
+    </form>
+
+    <footer>
+
+        Copyright © 2019 Yasmin Ayman Al-Zainy All Rights Reserved
+    </footer>
+</body>
+
+</html>
